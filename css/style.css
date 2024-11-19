@@ -1,0 +1,121 @@
+/*すべてのページに適用される設定*/
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+p, li, td {
+    line-height: 1.7;
+}
+body{
+    margin: 0 0 0 0;
+}
+a:link{
+    color: #f07d34;
+    text-decoration: none;
+}
+a:visited{
+    color: #f07d34;
+    text-decoration: none;
+}
+a:hover{
+    color: #f07d34;
+    text-decoration: underline;
+}
+a:active{
+    color: #f07d34;
+    text-decoration: underline;
+}
+img{
+    max-width: 100%;
+}
+/*すべてのページに適用 - ヘッダー*/
+.header{
+    padding: 40px;
+    background-image: url(../images/ribonn.jpg);
+    background-repeat: repeat-x;
+}
+.long{
+    text-align: center;
+}
+.nav ul{
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.nav a:link{
+    color: #253958;
+}
+.nav a:visited{
+    color: #253958;
+}
+.nav a:hover{
+    text-decoration: none;
+}
+.nav a:active{
+    text-decoration: none;
+}
+/*すべてのページに適用 - ヒーロー*/
+.hero{
+    padding: 137px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #e9eef0;
+    text-align: center;
+}
+.hero.menu{
+    background-image: url(../images/img10.jpg);
+}
+
+/*すべてのページに適用 - メイン*/
+main{
+    margin: 90px auto 90px auto;
+    max-width: 1000px;
+}
+main h2{
+    margin: 60px 0 20px 0;
+    color: #253958;
+    padding: 0 0 5px 0;
+    font-size: 1.3rem;
+}
+
+
+/*個別のスタイル*/
+
+
+
+/* menu.html*/
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+.item{
+    width: 300px;
+    height: 500px;
+}
+video{
+    width: 350px;
+    height: 400px;
+    max-width: 100%;
+}
+footer{
+    text-align: center;
+}
+
+/*モバイル対応*/
+@media(max-wiah: 767px){
+    .nav ul{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
